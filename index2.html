@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teasty😋Cake</title>
+  <link rel="shortcut icon" href="./img/ficon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <style>
+    /* nav fixed in top */
+    .my-nav {
+      position: fixed;
+      top: 0;
+      z-index: 99;
+    }
+
+    /* review star */
+    .a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .a2 {
+      text-decoration: none;
+      color: red;
+      font-weight: bold;
+    }
+
+    .card-p a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .card-p a:hover {
+      color: red;
+    }
+
+    .checked {
+      color: orange;
+    }
+
+    .all-hover-card:hover {
+      cursor: pointer;
+    }
+
+    /* social icon */
+    .size {
+      font-size: 37px;
+      color: gray;
+    }
+
+    .size:hover {
+      color: red;
+    }
+
+
+    .card-hover img {
+      transform: scale(1);
+
+    }
+
+    .another {
+
+      overflow: hidden;
+
+    }
+
+    .card-hover:hover .my-img {
+      transform: scale(1.2);
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+    <!-- first nav -->
+    <nav class="navbar navbar-expand-lg navbar-light my-nav w-100" style="background-color: #f7eeee; ">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-2 " href="./index.html"><img src="./img/logo.jpg" alt="" style="width: 130px;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- input search field -->
+          <form class="d-flex" style="margin-left:300px ;">
+            <input class="form-control me-2 input" type="search" placeholder="Search items" aria-label="Search"
+              style="width:500px; border: none;">
+            <button class="btn " type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+          </form>
+
+          <ul class="navbar-nav   mb-lg-0  align-items-center ">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">TastyTreat <br>Outlets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">0980808900</a>
+            </li>
+
+            <li class="ms-3">
+              <a class="nav-link ms-2 active d-flex flex-column justify-content-center align-items-center" href="#"> <i
+                  class="fa-regular fa-circle-user fs-4 active"></i>Account</a>
+            </li>
+            <li class="nav-item active ">
+              <a class="nav-link me-5" href="#" tabindex="-1"><i class="fa-solid fa-cart-shopping fs-4"></i></a>
+            </li>
+          </ul>
+
+
+        </div>
+      </div>
+    </nav>
+
+    <!-- nav 2 -->
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #db2424; margin-top: 82px;">
+      <div class="container-fluid ">
+
+
+        <div class="red-nav">
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav text-info  gap-1" style="margin-left: 20px;">
+              <li class="nav-item ">
+                <a class="nav-link active text-light" aria-current="page" href="#" target="_blank">Cake</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Pastry
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item text-light" href="#">Action</a></li>
+                  <li><a class="dropdown-item text-light" href="#">Another action</a></li>
+
+                </ul>
+
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">First food & snakes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Desert & Sweets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="#">Bread & Ban</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link  text-light" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Veberage
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Cookies & Toast</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="#">Addons</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-light" href="./index2.html" target="_blank">Customized cake</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Combo meal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Promotion</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div style="background: #db2424;">
+    <marquee width="100%" direction="right">
+      <h6 style=" display: inline; color: white;">!!!! Special Discount in
+        momo20% cake10% !!!!</h6>
+    </marquee>
+  </div>
+
+
+
+
+  <section class="container-fluid">
+    <div>
+      <h2>Cake</h2>
+      <ul class="nav ">
+        <a href="#" class="nav-link p-0 text-muted me-2">Home </a> / <a href=""
+          class="nav-link p-0 text-muted ms-2">Cakes</a>
+
+      </ul>
+    </div><br>
+
+    <hr>
+
+
+    <div class="row">
+
+      <div style="background-color: white; " class="all-hover-card col-3">
+
+        <div class="card card-hover" style="width: 18rem; padding: 10px; background-color: rgb(236, 235, 235);">
+          <p
+            style="border: 3px solid red; color: red;background: white;padding: 2px; text-align: center; display: inline-block; position: absolute; left: 5px; top: 15px; font-size: 15px;">
+            save 10%</p>
+          <div class="another">
+            <img src="./img/mycake3.png" class="card-img-top my-img"
+              style="width: 85%; margin-left: 20px; margin-top: 20px;" alt="...">
+          </div>
+          <div class="card-body">
+            <p class="card-title">Vanila Cake 500 GM</p>
+            <p class="card-text " title="this product is rate 5 out of 5"><a href="#" class="a"> <span
+                  class="fa fa-star checked"></span>5
+                (Reviews: 4) </a> <i class="fa-solid fa-rectangle-ad" title="Promotion"></i>
+              <br>
+              <span class="text-info"><i class="fa-solid fa-square-check"></i> in stock</span>
+            </p>
+
+            <div>
+              <p><i class="fa-solid fa-bangladeshi-taka-sign fs-5 text-danger"></i> <del
+                  class="text-danger fs-5">1200</del> <br><b class="fs-2"><i
+                    class="fa-solid fa-bangladeshi-taka-sign fs-4"></i>1050</b> <span><i
+                    class="fa-solid fa-cart-shopping fs-4 float-end  p-2 text-light "
+                    style="background-color: #db2424; border-radius: 50%;"></i></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div style="background-color: white; " class="all-hover-card col-3">
+
+        <div class="card" style="width: 18rem; padding: 10px; background-color: rgb(236, 235, 235);">
+          <p
+            style="border: 3px solid red; color: red;background: white;padding: 2px; text-align: center; display: inline-block; position: absolute; left: 5px; top: 15px; font-size: 15px;">
+            save 10%</p>
+          <img src="./img/mycake.png" class="card-img-top " style="width: 85%; margin-left: 20px; margin-top: 20px;"
+            alt="...">
+          <div class="card-body">
+            <p class="card-title"> Cake 600 GM</p>
+            <p class="card-text " title="this product is rate 5 out of 5"><a href="#" class="a"> <span
+                  class="fa fa-star checked"></span>5
+                (Reviews: 4) </a> <i class="fa-solid fa-rectangle-ad" title="Promotion"></i>
+              <br>
+              <span class="text-info"><i class="fa-solid fa-square-check"></i> in stock</span>
+            </p>
+
+            <div>
+              <p><i class="fa-solid fa-bangladeshi-taka-sign fs-5 text-danger"></i> <del
+                  class="text-danger fs-5">2000</del> <br><b class="fs-2"><i
+                    class="fa-solid fa-bangladeshi-taka-sign fs-4"></i>1720</b> <span><i
+                    class="fa-solid fa-cart-shopping fs-4 float-end  p-2 text-light "
+                    style="background-color: #db2424; border-radius: 50%;"></i></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div style="background-color: white; " class="all-hover-card col-3">
+
+        <div class="card" style="width: 18rem; padding: 10px; background-color: rgb(236, 235, 235);">
+          <p
+            style="border: 3px solid red; color: red;background: white;padding: 2px; text-align: center; display: inline-block; position: absolute; left: 5px; top: 15px; font-size: 15px;">
+            save 10%</p>
+          <img src="./img/mycake2.png" class="card-img-top " style="width: 85%; margin-left: 20px; margin-top: 20px;"
+            alt="...">
+          <div class="card-body">
+            <p class="card-title">Piniki Cake 550 GM</p>
+            <p class="card-text " title="this product is rate 5 out of 5"><a href="#" class="a"> <span
+                  class="fa fa-star checked"></span>5
+                (Reviews: 4) </a> <i class="fa-solid fa-rectangle-ad" title="Promotion"></i>
+              <br>
+              <span class="text-info"><i class="fa-solid fa-square-check"></i> in stock</span>
+            </p>
+
+            <div>
+              <p><i class="fa-solid fa-bangladeshi-taka-sign fs-5 text-danger"></i> <del
+                  class="text-danger fs-5">1380</del> <br><b class="fs-2"><i
+                    class="fa-solid fa-bangladeshi-taka-sign fs-4"></i>1220</b> <span><i
+                    class="fa-solid fa-cart-shopping fs-4 float-end  p-2 text-light "
+                    style="background-color: #db2424; border-radius: 50%;"></i></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="background-color: white; " class="all-hover-card col-3">
+
+        <div class="card" style="width: 18rem; padding: 10px; background-color: rgb(236, 235, 235);">
+          <p
+            style="border: 3px solid red; color: red;background: white;padding: 2px; text-align: center; display: inline-block; position: absolute; left: 5px; top: 15px; font-size: 15px;">
+            save 10%</p>
+          <img src="./img/mycake2.png" class="card-img-top " style="width: 85%; margin-left: 20px; margin-top: 20px;"
+            alt="...">
+          <div class="card-body">
+            <p class="card-title">Piniki Cake 550 GM</p>
+            <p class="card-text " title="this product is rate 5 out of 5"><a href="#" class="a"> <span
+                  class="fa fa-star checked"></span>5
+                (Reviews: 4) </a> <i class="fa-solid fa-rectangle-ad" title="Promotion"></i>
+              <br>
+              <span class="text-info"><i class="fa-solid fa-square-check"></i> in stock</span>
+            </p>
+
+            <div>
+              <p><i class="fa-solid fa-bangladeshi-taka-sign fs-5 text-danger"></i> <del
+                  class="text-danger fs-5">1380</del> <br><b class="fs-2"><i
+                    class="fa-solid fa-bangladeshi-taka-sign fs-4"></i>1220</b> <span><i
+                    class="fa-solid fa-cart-shopping fs-4 float-end  p-2 text-light "
+                    style="background-color: #db2424; border-radius: 50%;"></i></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </section><br>
+
+
+  <section>
+    <div class="container">
+      <p title="100% you get it"
+        style="font-weight: bolder; font-size: 20px; text-shadow: 0px 0px 1px rgb(0, 0, 0); color: rgb(0, 0, 0); background-color: aliceblue; border-radius: 40px 40px 0px 0px; padding: 20px;">
+        <span style="font-size: 35px; color: red;">[</span>
+
+        You can also collect pastries to surprise or celebration your loving one. Our Pastries are so delightful
+        as
+        you are delicious.
+        Shop pastry online, we confirm beautiful boxes to be delivered to your loved ones.
+        We provide various types of flavors of Pastry and it is hard to resist them too. <span
+          style="font-size: 35px; color: red;">]</span>
+      </p>
+    </div><br>
+  </section>
+
+  <!-- input  -->
+  <section>
+
+    <div class="container-fluid row  ">
+      <div class="card col-6" style="text-align: center; background: rgb(236, 235, 235); "><br>
+        <h5>Stay Connected</h5>
+        <div class="card-body">
+
+          <p class="card-text">Exclusive offers <br>
+            Subscribe to our news and get updated about exclusive offers!</p>
+
+          <div class="input-group mb-3  gap-2">
+            <input class=" ms-5 bg-light" type="email" required placeholder="Email" aria-label="Recipient's username"
+              aria-describedby="button-addon2"
+              style="width: 400px; border: none; padding: 7px 20px 7px 20px; border-radius: 20px;">
+            <button class="btn y "
+              style="   background: red; border:none;color:white; padding: 5px 20px 5px 20px; border-radius:20px;"
+              type="button" id="button-addon2">Subscribe</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- card 2 -->
+      <div class="card col-6" style="text-align: center; background: rgb(236, 235, 235); "><br>
+
+        <h5>Get social</h5>
+        <div class="card-body">
+
+          <p class="card-text">Join us in the group <br>
+            and be the first to know all promotions and offers!</p>
+          <P>
+            <a href=""><i class="fa-brands fa-facebook size"></i></a>
+            <a href=""><i class="fa-brands fa-vk size"></i></a>
+            <a href=""><i class="fa-brands fa-square-twitter size"></i></a>
+            <a href=""><i class="fa-brands fa-google-plus size"></i></a>
+            <a href=""><i class="fa-brands fa-square-youtube size"></i></a>
+            <a href=""><i class="fa-brands fa-skype size"></i></a>
+            <a href=""><i class="fa-brands fa-github size"></i></a>
+
+          </P>
+        </div>
+      </div>
+
+    </div>
+  </section><br>
+
+
+
+  <footer>
+    <div class="container-fluid">
+
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+
+        <div class="col-3 ">
+          <h5><a href="" class="a2">My Account</a></h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sing in</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Create Account</a></li>
+          </ul>
+        </div>
+
+
+        <div class="col-3 ">
+          <h5><a href="" class="a2">About Tasty Treat</a></h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About us</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contact us</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">terms & condition</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Praivecy policy</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Cancelation,Return &
+                Refund policy</a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="col-3 ">
+          <h5><a href="" class="a2">Customer Service</a></h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About your order</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Wishlist</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Comparision list</a></li>
+
+          </ul>
+        </div>
+
+        <div class="col-3">
+          <h5><a href="" class="a2">Tasty Treat Contact Us</a></h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">Dhaka, PRAN-RFL Center</li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">01304123243</a></li>
+            <li class="nav-item mb-2">Mon-Sun 9.00 - 18.00</li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><u>info@tastytreatbd.com</u></a></li>
+            <li class="nav-item mb-2"><a href="https://tastytreatbd.com/contacts/"
+                class="nav-link p-0 text-muted"><u>View on map</u></a></li>
+          </ul>
+        </div>
+      </footer>
+
+    </div>
+
+    <div class="row container-fluid">
+      <div class="col-5">
+        <p id="outlet-logo">
+          <img src="./img/outlet.png" onclick="showOutletPopup(this)" alt="Outlet" width="100px">21
+          Tastytreatbd.com
+        </p>
+
+      </div>
+      <div class="col-7">
+        <img src="./img/SSL Commerz Pay With logo All Size-03-1.png" alt="" width="700px" height="30px">
+      </div>
+    </div>
+
+  </footer>
+
+
+  <script src="./dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

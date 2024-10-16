@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yammi😋Foods</title>
+  <link rel="shortcut icon" href="./img/ficon.png" type="image/x-icon">
+  <!-- bootstrap link -->
+  <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
+  
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  
+  <!-- font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <style>
+    body {
+      font-family: "Roboto", sans-serif;
+    }
+    /* fixd nav bar red */
+    .my-nav {
+      position: fixed;
+      top: 0;
+      z-index: 99;
+    }
+
+    /* promotion btn */
+    .my-btn {
+      text-shadow: 2px 2px 2px black;
+    }
+
+
+    .a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .a2 {
+      text-decoration: none;
+      color: red;
+      font-weight: bold;
+    }
+
+    .red-nav ul li:hover {
+      background: #a70f0f;
+
+    }
+
+    .ab__dotd_promotions-item_days_left {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      font-size: 11px;
+      text-align: center;
+      padding: 5px 7px;
+      margin: 15px 0 15px 15px;
+      max-width: 80px;
+      min-width: 50px;
+      height: 70px;
+      background: #f6f6f6;
+      color: #6b6b6b;
+      border-bottom: 1px solid #e1e1e1;
+      box-shadow: 0 1px 1px #f6f6f6, 0 2px 1px #d5d5d5, 0 3px 1px #fbfbfb, 0 4px 1px #d5d5d5;
+      border-radius: var(--border-radius);
+      position: relative;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      background: #eee;
+    }
+
+    .card1 {
+      box-shadow: 10px 10px 5px 15px rgb(243, 242, 242);
+
+    }
+
+    .card-p a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .card-p a:hover {
+      color: red;
+    }
+
+    /* .overlay{
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0, 0, 0.2);
+      display: none;
+    }
+    .card:hover .overlay{
+      display: block;
+    }
+    .card-hover{
+      transform: scale(1);
+      transition: 2s;
+      overflow: hidden;
+    }
+    .card-hover:hover{
+      transform: scale(1.3);
+    } */
+
+
+    /* review star */
+    .checked {
+      color: orange;
+    }
+
+    .all-hover-card:hover {
+      cursor: pointer;
+    }
+
+    /* social  icon */
+
+    .size {
+      font-size: 37px;
+      color: gray;
+    }
+
+    .size:hover {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <!-- first nav -->
+    <nav class="navbar navbar-expand-lg navbar-light my-nav w-100 " style="background-color: #f7eeee; ">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-2 " href="./index.html"><img src="./img/logo.jpg" alt="" style="width: 130px;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- input search field -->
+          <form class="d-flex" style="margin-left:300px ;">
+            <input class="form-control me-2 input" type="search" placeholder="Search items" aria-label="Search"
+              style="width:500px; border: none;">
+              <button type="button" class="btn " data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            
+          </form>
+
+          <ul class="navbar-nav   mb-lg-0  align-items-center ">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">TastyTreat <br>Outlets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">0980808900</a>
+            </li>
+
+            <li class="ms-3">
+              <a class="nav-link ms-2 active d-flex flex-column justify-content-center align-items-center" href="#"> <i
+                  class="fa-regular fa-circle-user fs-4 active"></i>Account</a>
+            </li>
+            <li class="nav-item active ">
+              <a class="nav-link me-5" href="#" tabindex="-1"><i class="fa-solid fa-cart-shopping fs-4"></i></a>
+            </li>
+          </ul>
+
+
+        </div>
+      </div>
+    </nav>
+
+    <!-- nav 2 -->
+    <nav class="navbar navbar-expand-lg navbar-light  " style="background-color: #db2424; margin-top: 82px; position: relative; ">
+      <div class="container-fluid ">
+
+
+        <div class="red-nav">
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav text-info  gap-1" style="margin-left: 20px;">
+              <li class="nav-item ">
+                <a class="nav-link  text-light" aria-current="page" href="index2.html" target="_blank">Cake</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link  text-light" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Pastry
+                </a>
+              </li>
+             
+              <li class="nav-item" >
+                <a class="nav-link text-light" href="#">First food & snakes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Desert & Sweets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="#">Bread & Ban</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Veberage
+                </a>
+                <ul class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink"  >
+                  <li><a class="dropdown-item " href="#">Action</a></li>
+                  <div class="dropdown-divider"></div>
+                  <li><a class="dropdown-item " href="#">Another action</a></li>
+
+                </ul>
+
+              </li>
+              
+
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Cookies & Toast</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="#">Addons</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-light" href="./index2.html" target="_blank">Customized cake</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Combo meal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Promotion</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div style="background:#db2424; ">
+    <marquee width="100%" direction="right">
+      <h6 style=" display: inline; color: white;">!!!! Special Discount in
+        momo20% cake10% !!!!</h6>
+    </marquee>
+  </div>
+  <main>
+
+    <!-- carosoul  -->
+    <section >
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" >
+        <div class="carousel-indicators" >
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/carosol1.png" class="d-block w-100 " alt="..." style="height: 380px;">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/carosol2.png" class="d-block w-100" alt="..." style="height: 380px;">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/carosol3.png" class="d-block w-100" alt="..." style="height: 380px;">
+          </div>
+          <div class="carousel-item"></div>
+          <img src="./img/carosol4.png" class="d-block w-100" alt="..." style="height: 380px;">
+        </div>
+      </div>
+     
+
+
+      <div >
+        <img src="./img/footcarosoul.png" alt="" class="w-100">
+      </div>
+
+    </section>
+    
+
+    <!-- Promotion Section -->
+
+    <section style="background-color: #db2424; position: relative;">
+      <div class="container-fluid ">
+        <div><br>
+          <h2 style="color: white;"> Promotion</h2>
+        </div><br>
+        <div class="d-flex  " style="gap: 90px;">
+          <!-- card1 -->
+
+          <div class="card" style="width: 18rem;">
+
+            <div>
+              <img src="./img/momo.jpg" class="card-img-top " alt="...">
+            </div>
+
+
+            <div class="card-body">
+              <div class="ab__dotd_promotions-item_days_left float-start me-3">
+                <span style="font-size: 20px; color: black; font-weight: bold;">23</span>
+                <div>days left</div>
+              </div>
+              <p class="card-p"><a href="">30tk off on donet</a></p>
+              <p class="card-text fs-6">form 01-10-2024 to 30-10-2024</p>
+            </div>
+          </div>
+          <!-- card2 -->
+
+          <div class="card " style="width: 18rem;">
+            <img src="./img/extracard.jpg" class="card-img-top" alt="..." style="height: 180px;">
+            <div class="card-body">
+              <div class="ab__dotd_promotions-item_days_left float-start me-3">
+                <span style="font-size: 20px; color: black; font-weight: bold;">23</span>
+                <div>days left</div>
+              </div>
+              <p class="card-p"><a href="">30tk off on donet</a></p>
+              <p class="card-text fs-6">form 01-10-2024 to 30-10-2024</p>
+            </div>
+          </div>
+          <!-- card-3 -->
+          <div class="card" style="width: 18rem;">
+            <img src="./img/waffle_1320x800.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="ab__dotd_promotions-item_days_left float-start me-3">
+                <span style="font-size: 20px; color: black; font-weight: bold;">23</span>
+                <div>days left</div>
+              </div>
+              <p class="card-p"><a href="">30tk off on donet</a></p>
+              <p class="card-text fs-6">form 01-10-2024 to 30-10-2024</p>
+            </div>
+          </div>
+          <!-- card4 -->
+
+          <div class="card" style="width: 18rem;">
+            <img src="./img/extracard2.jpg" class="card-img-top" alt="..." height="180px">
+            <div class="card-body">
+              <div class="ab__dotd_promotions-item_days_left float-start me-3">
+                <span style="font-size: 20px; color: black; font-weight: bold;">23</span>
+                <div>days left</div>
+              </div>
+              <p class="card-p"><a href="">30tk off on donet</a></p>
+              <p class="card-text fs-6">form 01-10-2024 to 30-10-2024</p>
+            </div>
+          </div>
+        </div><br>
+
+        <Button class="btn mt-3 mb-3  rounded-3 text-light my-btn" style="background-color: #ff0000;">All
+          Promotion</Button><br><br>
+
+      </div>
+    </section>
+    <!-- cake celebration -->
+
+    <section class="container-fluid">
+      <div class="all-hover-card ">
+
+        <div class="mt-3 ">
+
+          <img src="./img/Web-Banner-Celebration-Cake.jpg" alt="" class="w-100 ">
+        </div>
+
+        <div class="row">
+
+          <div style="background-color: white;  " class="col-3">
+            <div class="card" style="width: 18rem; padding: 10px; background-color: rgb(236, 235, 235);">
+              <p
+                style="border: 3px solid red; color: red;background: white;padding: 2px; text-align: center; display: inline-block; position: absolute; left: 5px; top: 15px; font-size: 15px;">
+                save 10%</p>
+              <a href="./index2.html"><img src="./img/second-card.png" class="card-img-top "
+                  style="width: 85%; margin-left: 20px; margin-top: 20px;" alt="..."></a>
+              <div class="card-body">
+                <p class="card-title">Vanila Cake 500 GM</p>
+                <p class="card-text " title="this product is rate 5 out of 5"><a href="#" class="a"> <span
+                      class="fa fa-star checked"></span>5
+                    (Reviews: 4) </a> <i class="fa-solid fa-rectangle-ad" title="Promotion"></i>
+                  <br>
+                  <span class="text-info"><i class="fa-solid fa-square-check"></i> in stock</span>
+                </p>
+
+                <div>
+                  <p><i class="fa-solid fa-bangladeshi-taka-sign fs-5 text-danger"></i> <del
+                      class="text-danger fs-5">950</del> <br><b class="fs-2"><i
+                        class="fa-solid fa-bangladeshi-taka-sign fs-4"></i>780</b> <span><i
+                        class="fa-solid fa-cart-shopping fs-4 float-end  p-2 text-light "
+                        style="background-color: #db2424; border-radius: 50%;"></i></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card2 -->
+          <div style="background-color: white; " class="col-3">
+
+            <div class="card" style="width: 18rem; padding: 10px; background-color: rgb(236, 235, 235);">
+              <p
+                style="border: 3px solid red; color: red;background: white;padding: 2px; text-align: center; display: inline-block; position: absolute; left: 5px; top: 15px; font-size: 15px;">
+                save 10%</p>
+              <a href="./index2.html"><img src="./img/vanila.png" class="card-img-top "
+                  style="width: 85%; margin-left: 20px; margin-top: 20px;" alt="..." height="225px"></a>
+              <div class="card-body">
+                <p class="card-title">Vanila Cake 350 GM</p>
+                <p class="card-text " title="this product is rate 5 out of 5"><a href="#" class="a"> <span
+                      class="fa fa-star checked"></span>5
+                    (Reviews: 4) </a> <i class="fa-solid fa-rectangle-ad" title="Promotion"></i>
+                  <br>
+                  <span class="text-info"><i class="fa-solid fa-square-check"></i> in stock</span>
+                </p>
+
+                <div>
+                  <p><i class="fa-solid fa-bangladeshi-taka-sign fs-5 text-danger"></i> <del
+                      class="text-danger fs-5">980</del> <br><b class="fs-2"><i
+                        class="fa-solid fa-bangladeshi-taka-sign fs-4"></i>700</b> <span><i
+                        class="fa-solid fa-cart-shopping fs-4 float-end  p-2 text-light "
+                        style="background-color: #db2424; border-radius: 50%;"></i></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card3 -->
+
+          <div style="background-color: white;  " class="col-3">
+
+            <div class="card" style="width: 18rem; padding: 10px; background-color: rgb(236, 235, 235);">
+              <p
+                style="border: 3px solid red; color: red;background: white;padding: 2px; text-align: center; display: inline-block; position: absolute; left: 5px; top: 15px; font-size: 15px;">
+                save 10%</p>
+              <a href="./index2.html"><img src="./img/vanila2.png" class="card-img-top "
+                  style="width: 85%; margin-left: 20px; margin-top: 20px;" alt="..." height="225px"></a>
+              <div class="card-body">
+                <p class="card-title">Vanila Cake 500 GM</p>
+                <p class="card-text " title="this product is rate 5 out of 5"><a href="#" class="a"> <span
+                      class="fa fa-star checked"></span>5
+                    (Reviews: 4) </a> <i class="fa-solid fa-rectangle-ad" title="Promotion"></i>
+                  <br>
+                  <span class="text-info"><i class="fa-solid fa-square-check"></i> in stock</span>
+                </p>
+
+                <div>
+                  <p><i class="fa-solid fa-bangladeshi-taka-sign fs-5 text-danger"></i> <del
+                      class="text-danger fs-5">1000</del> <br><b class="fs-2"><i
+                        class="fa-solid fa-bangladeshi-taka-sign fs-4"></i>750</b> <span><i
+                        class="fa-solid fa-cart-shopping fs-4 float-end  p-2 text-light "
+                        style="background-color: #db2424; border-radius: 50%;"></i></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="background-color: white;  " class="col-3">
+
+            <div class="card" style="width: 18rem; padding: 10px; background-color: rgb(236, 235, 235);">
+              <p
+                style="border: 3px solid red; color: red;background: white;padding: 2px; text-align: center; display: inline-block; position: absolute; left: 5px; top: 15px; font-size: 15px;">
+                save 10%</p>
+              <a href="./index2.html"><img src="./img/vanila3.png" class="card-img-top "
+                  style="width: 85%; margin-left: 20px; margin-top: 20px;" alt="..." height="225px"></a>
+              <div class="card-body">
+                <p class="card-title">Vanila Cake 400 GM</p>
+                <p class="card-text " title="this product is rate 5 out of 5"><a href="#" class="a"> <span
+                      class="fa fa-star checked"></span>5
+                    (Reviews: 4) </a> <i class="fa-solid fa-rectangle-ad" title="Promotion"></i>
+                  <br>
+                  <span class="text-info"><i class="fa-solid fa-square-check"></i> in stock</span>
+                </p>
+
+                <div>
+                  <p><i class="fa-solid fa-bangladeshi-taka-sign fs-5 text-danger"></i> <del
+                      class="text-danger fs-5">980</del> <br><b class="fs-2"><i
+                        class="fa-solid fa-bangladeshi-taka-sign fs-4"></i>720</b> <span><i
+                        class="fa-solid fa-cart-shopping fs-4 float-end  p-2 text-light "
+                        style="background-color: #db2424; border-radius: 50%;"></i></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <div >
+
+        <img src="./img/Web-Banner-Mexiacan-_-Momo.jpg" alt="" class="w-100 ">
+      </div>
+    </section>
+
+    <!-- maxican momo -->
+
+
+
+
+    <section class="container-fluid">
+      <div class="all-hover-card">
+
+        <div class="row">
+
+          <div style="background-color: white; " class="col-3">
+
+            <div class="card" style="width: 18rem; padding: 10px;  background-color: rgb(236, 235, 235);">
+              <p
+                style="border: 3px solid red; color: red;background: white;padding: 2px; text-align: center; display: inline-block; position: absolute; left: 5px; top: 15px; font-size: 15px;">
+                save 20%</p>
+              <img src="./img/momo.jpg" class="card-img-top " style="width: 85%; margin-left: 20px; margin-top: 20px;"
+                alt="...">
+              <div class="card-body">
+                <p class="card-title">Maxican momo</p>
+                <p class="card-text " title="this product is rate 4.4 out of 5"><a href="#" class="a"> <span
+                      class="fa fa-star checked"></span>5
+                    (Reviews: 39) </a> <i class="fa-solid fa-rectangle-ad" title="Promotion"></i>
+                  <br>
+                  <span class="text-info"><i class="fa-solid fa-square-check"></i> in stock</span>
+                </p>
+
+                <div>
+                  <p> <i class="fa-solid fa-bangladeshi-taka-sign fs-5 text-danger"></i> <del
+                      class="text-danger fs-5">150</del> <br><b class="fs-2"><i
+                        class="fa-solid fa-bangladeshi-taka-sign fs-4"></i>120</b> <span><i
+                        class="fa-solid fa-cart-shopping fs-4 float-end  p-2 text-light "
+                        style="background-color: #db2424; border-radius: 50%;"></i></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- car2 -->
+
+          <div style="background-color: white; " class="col-3">
+
+            <div class="card" style="width: 18rem; padding: 10px;  background-color: rgb(236, 235, 235);">
+              <p
+                style="border: 3px solid red; color: red;background: white;padding: 2px; text-align: center; display: inline-block; position: absolute; left: 5px; top: 15px; font-size: 15px;">
+                save 30%</p>
+              <img src="./img/momo1.png" class="card-img-top "
+                style="width: 85%; margin-left: 20px; margin-top: 20px; height: 137px;" alt="...">
+              <div class="card-body">
+                <p class="card-title">Maxican momo</p>
+                <p class="card-text " title="this product is rate 4.4 out of 5"><a href="#" class="a"> <span
+                      class="fa fa-star checked"></span>5
+                    (Reviews: 39) </a> <i class="fa-solid fa-rectangle-ad" title="Promotion"></i>
+                  <br>
+                  <span class="text-info"><i class="fa-solid fa-square-check"></i> in stock</span>
+                </p>
+
+                <div>
+                  <p> <i class="fa-solid fa-bangladeshi-taka-sign fs-5 text-danger"></i> <del
+                      class="text-danger fs-5">150</del> <br><b class="fs-2"><i
+                        class="fa-solid fa-bangladeshi-taka-sign fs-4"></i>120</b> <span><i
+                        class="fa-solid fa-cart-shopping fs-4 float-end  p-2 text-light "
+                        style="background-color: #db2424; border-radius: 50%;"></i></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div style="background-color: white; " class="col-3">
+
+            <div class="card " style="width: 18rem; padding: 10px;  background-color: rgb(236, 235, 235);">
+              <p
+                style="border: 3px solid red; color: red;background: white;padding: 2px; text-align: center; display: inline-block; position: absolute; left: 5px; top: 15px; font-size: 15px;">
+                save 20%</p>
+              <img src="./img/momo2.png" class="card-img-top "
+                style="width: 85%; margin-left: 20px; margin-top: 20px; height: 137px;" alt="...">
+              <div class="card-body">
+                <p class="card-title">Maxican momo</p>
+                <p class="card-text " title="this product is rate 4.4 out of 5"><a href="#" class="a"> <span
+                      class="fa fa-star checked"></span>5
+                    (Reviews: 39) </a> <i class="fa-solid fa-rectangle-ad" title="Promotion"></i>
+                  <br>
+                  <span class="text-info"><i class="fa-solid fa-square-check"></i> in stock</span>
+                </p>
+
+                <div>
+                  <p> <i class="fa-solid fa-bangladeshi-taka-sign fs-5 text-danger"></i> <del
+                      class="text-danger fs-5">150</del> <br><b class="fs-2"><i
+                        class="fa-solid fa-bangladeshi-taka-sign fs-4"></i>120</b> <span><i
+                        class="fa-solid fa-cart-shopping fs-4 float-end  p-2 text-light "
+                        style="background-color: #db2424; border-radius: 50%;"></i></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div style="background-color: white; " class="col-3">
+
+            <div class="card" style="width: 18rem; padding: 10px;  background-color: rgb(236, 235, 235);">
+              <p
+                style="border: 3px solid red; color: red;background: white;padding: 2px; text-align: center; display: inline-block; position: absolute; left: 5px; top: 15px; font-size: 15px;">
+                save 20%</p>
+              <img src="./img/momo3.png" class="card-img-top "
+                style="width: 85%; margin-left: 20px; margin-top: 20px; height: 137px;" alt="...">
+              <div class="card-body">
+                <p class="card-title">Maxican momo</p>
+                <p class="card-text " title="this product is rate 4.4 out of 5"><a href="#" class="a"> <span
+                      class="fa fa-star checked"></span>5
+                    (Reviews: 39) </a> <i class="fa-solid fa-rectangle-ad" title="Promotion"></i>
+                  <br>
+                  <span class="text-info"><i class="fa-solid fa-square-check"></i> in stock</span>
+                </p>
+
+                <div>
+                  <p> <i class="fa-solid fa-bangladeshi-taka-sign fs-5 text-danger"></i> <del
+                      class="text-danger fs-5">150</del> <br><b class="fs-2"><i
+                        class="fa-solid fa-bangladeshi-taka-sign fs-4"></i>120</b> <span><i
+                        class="fa-solid fa-cart-shopping fs-4 float-end  p-2 text-light "
+                        style="background-color: #db2424; border-radius: 50%;"></i></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div>
+        <img src="./img/Web-Banner-Savory-_-Snacks.jpg" alt="" class="w-100 ">
+      </div>
+    </section>
+
+
+
+    <!-- savori& snaks -->
+
+    <section class="container-fluid">
+      <div class="all-hover-card">
+
+        <div style="background-color: white; display: flex; gap: 90px;">
+
+          <div class="card" style="width: 18rem; padding: 10px;  background-color: rgb(236, 235, 235);">
+            <p
+              style="border: 3px solid red; color: red;background: white;padding: 2px; text-align: center; display: inline-block; position: absolute; left: 5px; top: 15px; font-size: 15px;">
+              save 15%</p>
+            <img src="./img/Sausage_Delight_Pizza.jpg" class="card-img-top "
+              style="width: 85%; margin-left: 20px; margin-top: 20px;" alt="...">
+            <div class="card-body">
+              <p class="card-title">Vanila Cake 500 GM</p>
+              <p class="card-text " title="this product is rate 5 out of 5"><a href="#" class="a"> <span
+                    class="fa fa-star checked"></span>5
+                  (Reviews: 4) </a> <i class="fa-solid fa-rectangle-ad" title="Promotion"></i>
+                <br>
+                <span class="text-info"><i class="fa-solid fa-square-check"></i> in stock</span>
+              </p>
+
+              <div>
+                <p><i class="fa-solid fa-bangladeshi-taka-sign fs-5 text-danger"></i> <del
+                    class="text-danger fs-5">90</del> <br><b class="fs-2"><i
+                      class="fa-solid fa-bangladeshi-taka-sign fs-4"></i>76</b> <span><i
+                      class="fa-solid fa-cart-shopping fs-4 float-end  p-2 text-light "
+                      style="background-color: #db2424; border-radius: 50%;"></i></span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- middel card -->
+
+          <div class="card" style="width: 18rem; padding: 10px;  background-color: rgb(236, 235, 235);">
+
+            <img src="./img/Sausage_Delight_Pizza1.jpg" class="card-img-top "
+              style="width: 85%; margin-left: 20px; margin-top: 20px;" alt="...">
+            <div class="card-body">
+              <p class="card-title">Vanila Cake 500 GM</p>
+              <p class="card-text " title="this product is rate 5 out of 5"><a href="#" class="a"> <span
+                    class="fa fa-star checked"></span>5
+                  (Reviews: 4) </a> <i class="fa-solid fa-rectangle-ad" title="Promotion"></i>
+                <br>
+                <span class="text-info"><i class="fa-solid fa-square-check"></i> in stock</span>
+              </p>
+
+              <div>
+                <p> <br><b class="fs-3"><i class="fa-solid fa-bangladeshi-taka-sign fs-4"></i>80</b> <span><i
+                      class="fa-solid fa-cart-shopping fs-4 float-end  p-2 text-light "
+                      style="background-color: #db2424; border-radius: 50%;"></i></span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- another card -->
+          <div class="card" style="width: 18rem; padding: 10px;  background-color: rgb(236, 235, 235);">
+
+            <img src="./img/Sausage_Delight_Pizza2.jpg" class="card-img-top "
+              style="width: 85%; margin-left: 20px; margin-top: 20px;" alt="...">
+            <div class="card-body">
+              <p class="card-title">Vanila Cake 500 GM</p>
+              <p class="card-text " title="this product is rate 5 out of 5"><a href="#" class="a"> <span
+                    class="fa fa-star checked"></span>5
+                  (Reviews: 4) </a> <i class="fa-solid fa-rectangle-ad" title="Promotion"></i>
+                <br>
+                <span class="text-info"><i class="fa-solid fa-square-check"></i> in stock</span>
+              </p>
+
+              <div>
+                <p> <br><b class="fs-3"><i class="fa-solid fa-bangladeshi-taka-sign fs-4"></i>70</b> <span><i
+                      class="fa-solid fa-cart-shopping fs-4 float-end  p-2 text-light "
+                      style="background-color: #db2424; border-radius: 50%;"></i></span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- last card -->
+
+          <div class="card" style="width: 18rem; padding: 10px;  background-color: rgb(236, 235, 235);">
+
+            <img src="./img/Sausage_Delight_Pizza3.jpg" class="card-img-top "
+              style="width: 85%; margin-left: 20px; margin-top: 20px;" alt="...">
+            <div class="card-body">
+              <p class="card-title">Sausage Delightm Pizza</p>
+              <p class="card-text " title="this product is rate 5 out of 5"><a href="#" class="a"> <span
+                    class="fa fa-star checked"></span>5
+                  (Reviews: 4) </a> <i class="fa-solid fa-rectangle-ad" title="Promotion"></i>
+                <br>
+                <span class="text-info"><i class="fa-solid fa-square-check"></i> in stock</span>
+              </p>
+
+              <div>
+                <p><i class="fa-solid fa-bangladeshi-taka-sign fs-5 text-danger"></i> <del
+                    class="text-danger fs-5">90</del> <br><b class="fs-2"><i
+                      class="fa-solid fa-bangladeshi-taka-sign fs-4"></i>76</b> <span><i
+                      class="fa-solid fa-cart-shopping fs-4 float-end  p-2 text-light "
+                      style="background-color: #db2424; border-radius: 50%;"></i></span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <img src="./img/Web-Banner-Bread-Bun.jpg" alt="" class="w-100 ">
+      </div>
+    </section><br>
+
+    <!-- bread and toast -->
+
+    <section class="container-fluid">
+      <h2 style="text-shadow: 2px 2px 4px green;">BREAD BUN & TOAST</h2><br>
+
+
+      <div class="all-hover-card">
+
+        <div style="background-color: white; display: flex; gap: 90px; ">
+
+          <div class="card" style="width: 18rem; padding: 10px;  background-color: rgb(236, 235, 235);">
+            <p
+              style="border: 3px solid red; color: red;background: white;padding: 2px; text-align: center; display: inline-block; position: absolute; left: 5px; top: 15px; font-size: 15px;">
+              save 15%</p>
+            <img src="./img/Chocolate-Donut-800x800.jpg" class="card-img-top "
+              style="width: 85%; margin-left: 20px; margin-top: 20px;" alt="...">
+            <div class="card-body">
+              <p class="card-title">Vanila Cake 500 GM</p>
+              <p class="card-text " title="this product is rate 5 out of 5"><a href="#" class="a"> <span
+                    class="fa fa-star checked"></span>5
+                  (Reviews: 4) </a> <i class="fa-solid fa-rectangle-ad" title="Promotion"></i>
+                <br>
+                <span class="text-info"><i class="fa-solid fa-square-check"></i> in stock</span>
+              </p>
+
+              <div>
+                <p><i class="fa-solid fa-bangladeshi-taka-sign fs-5 text-danger"></i> <del
+                    class="text-danger fs-5">90</del> <br><b class="fs-2"><i
+                      class="fa-solid fa-bangladeshi-taka-sign fs-4"></i>76</b> <span><i
+                      class="fa-solid fa-cart-shopping fs-4 float-end  p-2 text-light "
+                      style="background-color: #db2424; border-radius: 50%;"></i></span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- middel card -->
+
+          <div class="card" style="width: 18rem; padding: 10px;  background-color: rgb(236, 235, 235);">
+
+            <img src="./img/Milk_Bread_350gm__.jpg" class="card-img-top "
+              style="width: 85%; margin-left: 20px; margin-top: 20px;" alt="...">
+            <div class="card-body">
+              <p class="card-title">Vanila Cake 500 GM</p>
+              <p class="card-text " title="this product is rate 5 out of 5"><a href="#" class="a"> <span
+                    class="fa fa-star checked"></span>5
+                  (Reviews: 4) </a> <i class="fa-solid fa-rectangle-ad" title="Promotion"></i>
+                <br>
+                <span class="text-info"><i class="fa-solid fa-square-check"></i> in stock</span>
+              </p>
+
+              <div>
+                <p> <br><b class="fs-3"><i class="fa-solid fa-bangladeshi-taka-sign fs-4"></i>80</b> <span><i
+                      class="fa-solid fa-cart-shopping fs-4 float-end  p-2 text-light "
+                      style="background-color: #db2424; border-radius: 50%;"></i></span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- another card -->
+          <div class="card" style="width: 18rem; padding: 10px;  background-color: rgb(236, 235, 235);">
+
+            <img src="./img/Tasty_Treat_Muri_Toast_-_300_gm.jpg" class="card-img-top "
+              style="width: 85%; margin-left: 20px; margin-top: 20px;" alt="...">
+            <div class="card-body">
+              <p class="card-title">Vanila Cake 500 GM</p>
+              <p class="card-text " title="this product is rate 5 out of 5"><a href="#" class="a"> <span
+                    class="fa fa-star checked"></span>5
+                  (Reviews: 4) </a> <i class="fa-solid fa-rectangle-ad" title="Promotion"></i>
+                <br>
+                <span class="text-info"><i class="fa-solid fa-square-check"></i> in stock</span>
+              </p>
+
+              <div>
+                <p> <br><b class="fs-3"><i class="fa-solid fa-bangladeshi-taka-sign fs-4"></i>70</b> <span><i
+                      class="fa-solid fa-cart-shopping fs-4 float-end  p-2 text-light "
+                      style="background-color: #db2424; border-radius: 50%;"></i></span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- another card -->
+          <div class="card" style="width: 18rem; padding: 10px;  background-color: rgb(236, 235, 235);">
+
+            <img src="./img/Cream_Donut_bun_4pcs.jpg" class="card-img-top "
+              style="width: 85%; margin-left: 20px; margin-top: 20px;" alt="...">
+            <div class="card-body">
+              <p class="card-title">Vanila Cake 500 GM</p>
+              <p class="card-text " title="this product is rate 5 out of 5"><a href="#" class="a"> <span
+                    class="fa fa-star checked"></span>5
+                  (Reviews: 4) </a> <i class="fa-solid fa-rectangle-ad" title="Promotion"></i>
+                <br>
+                <span class="text-info"><i class="fa-solid fa-square-check"></i> in stock</span>
+              </p>
+
+              <div>
+                <p> <br><b class="fs-3"><i class="fa-solid fa-bangladeshi-taka-sign fs-4"></i>70</b> <span><i
+                      class="fa-solid fa-cart-shopping fs-4 float-end  p-2 text-light "
+                      style="background-color: #db2424; border-radius: 50%;"></i></span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div><br>
+
+        <!-- another card -->
+        <div style="background-color: white; display: flex; gap: 90px; ">
+
+          <div class="card" style="width: 18rem; padding: 10px;  background-color: rgb(236, 235, 235);">
+            <p
+              style="border: 3px solid red; color: red;background: white;padding: 2px; text-align: center; display: inline-block; position: absolute; left: 5px; top: 15px; font-size: 15px;">
+              save 15%</p>
+            <img src="./img/Vanilla-Triangle-Pastry.jpg" class="card-img-top "
+              style="width: 85%; margin-left: 20px; margin-top: 20px;" alt="...">
+            <div class="card-body">
+              <p class="card-title">Vanilla Triangle Pastry</p>
+              <p class="card-text " title="this product is rate 5 out of 5"><a href="#" class="a"> <span
+                    class="fa fa-star checked"></span>5
+                  (Reviews: 4) </a> <i class="fa-solid fa-rectangle-ad" title="Promotion"></i>
+                <br>
+                <span class="text-info"><i class="fa-solid fa-square-check"></i> in stock</span>
+              </p>
+
+              <div>
+                <p><i class="fa-solid fa-bangladeshi-taka-sign fs-5 text-danger"></i> <del
+                    class="text-danger fs-5">90</del> <br><b class="fs-2"><i
+                      class="fa-solid fa-bangladeshi-taka-sign fs-4"></i>76</b> <span><i
+                      class="fa-solid fa-cart-shopping fs-4 float-end  p-2 text-light "
+                      style="background-color: #db2424; border-radius: 50%;"></i></span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- middel card -->
+
+          <div class="card" style="width: 18rem; padding: 10px;  background-color: rgb(236, 235, 235);">
+
+            <img src="./img/Cream_Donut_bun_4pcs.jpg" class="card-img-top "
+              style="width: 85%; margin-left: 20px; margin-top: 20px;" alt="...">
+            <div class="card-body">
+              <p class="card-title">Vanila Cake 500 GM</p>
+              <p class="card-text " title="this product is rate 5 out of 5"><a href="#" class="a"> <span
+                    class="fa fa-star checked"></span>5
+                  (Reviews: 4) </a> <i class="fa-solid fa-rectangle-ad" title="Promotion"></i>
+                <br>
+                <span class="text-info"><i class="fa-solid fa-square-check"></i> in stock</span>
+              </p>
+
+              <div>
+                <p> <br><b class="fs-3"><i class="fa-solid fa-bangladeshi-taka-sign fs-4"></i>80</b> <span><i
+                      class="fa-solid fa-cart-shopping fs-4 float-end  p-2 text-light "
+                      style="background-color: #db2424; border-radius: 50%;"></i></span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- another card -->
+          <div class="card" style="width: 18rem; padding: 10px;  background-color: rgb(236, 235, 235);">
+
+            <img src="./img/bread.png" class="card-img-top " style="width: 85%; margin-left: 20px; margin-top: 20px;"
+              alt="...">
+            <div class="card-body">
+              <p class="card-title">Vanila Cake 500 GM</p>
+              <p class="card-text " title="this product is rate 5 out of 5"><a href="#" class="a"> <span
+                    class="fa fa-star checked"></span>5
+                  (Reviews: 4) </a> <i class="fa-solid fa-rectangle-ad" title="Promotion"></i>
+                <br>
+                <span class="text-info"><i class="fa-solid fa-square-check"></i> in stock</span>
+              </p>
+
+              <div>
+                <p> <br><b class="fs-3"><i class="fa-solid fa-bangladeshi-taka-sign fs-4"></i>70</b> <span><i
+                      class="fa-solid fa-cart-shopping fs-4 float-end  p-2 text-light "
+                      style="background-color: #db2424; border-radius: 50%;"></i></span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- another card -->
+          <div class="card" style="width: 18rem; padding: 10px;  background-color: rgb(236, 235, 235);">
+
+            <img src="./img/tost.png" class="card-img-top " style="width: 85%; margin-left: 20px; margin-top: 20px;"
+              alt="...">
+            <div class="card-body">
+              <p class="card-title">Vanila Cake 500 GM</p>
+              <p class="card-text " title="this product is rate 5 out of 5"><a href="#" class="a"> <span
+                    class="fa fa-star checked"></span>5
+                  (Reviews: 4) </a> <i class="fa-solid fa-rectangle-ad" title="Promotion"></i>
+                <br>
+                <span class="text-info"><i class="fa-solid fa-square-check"></i> in stock</span>
+              </p>
+
+              <div>
+                <p> <br><b class="fs-3"><i class="fa-solid fa-bangladeshi-taka-sign fs-4"></i>70</b> <span><i
+                      class="fa-solid fa-cart-shopping fs-4 float-end  p-2 text-light "
+                      style="background-color: #db2424; border-radius: 50%;"></i></span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+
+      <div>
+        <img src="./img/Web-Banner-COOKIES.jpg" alt="" class="w-100 ">
+      </div>
+
+    </section><br>
+
+    <!-- cookies section -->
+    <section>
+      <div class="container-fluid row " style="gap: 90px;">
+
+        <div class="card col-3 shadow-lg p-3  bg-body rounded"
+          style="width: 18rem; padding: 10px;  background-color: rgb(236, 235, 235);">
+
+          <img src="./img/merican_Cookies_300gm.jpg" class="card-img-top "
+            style="width: 85%; margin-left: 20px; margin-top: 20px;" alt="merican_Cookies_300gm">
+          <div class="card-body">
+            <p class="card-title fs-6">Tasty Treat Butter Salt Cookies 300gm +</p>
+
+            <span class="text-info"><i class="fa-solid fa-square-check"></i> in stock</span>
+
+
+            <div>
+              <p> <br><b class="fs-3"><i class="fa-solid fa-bangladeshi-taka-sign fs-4"></i>250</b> <span><i
+                    class="fa-solid fa-cart-shopping fs-4 float-end  p-2 text-light "
+                    style="background-color: #db2424; border-radius: 50%;"></i></span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- another -->
+
+        <div class="card  col-3 shadow-lg p-3  bg-body rounded"
+          style="width: 18rem; padding: 10px;  background-color: rgb(236, 235, 235);">
+
+          <img src="./img/cookies1.png" class="card-img-top " style="width: 85%; margin-left: 20px; margin-top: 20px;"
+            alt="...">
+          <div class="card-body">
+            <p class="card-title fs-6">American Cookies 300gm <br><br>
+            </p>
+
+            <span class="text-info"><i class="fa-solid fa-square-check"></i> in stock</span>
+
+
+            <div>
+              <p> <br><b class="fs-3"><i class="fa-solid fa-bangladeshi-taka-sign fs-4"></i>250</b> <span><i
+                    class="fa-solid fa-cart-shopping fs-4 float-end  p-2 text-light "
+                    style="background-color: #db2424; border-radius: 50%;"></i></span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- card -->
+        <div class="card  col-3 shadow-lg p-3  bg-body rounded"
+          style="width: 18rem; padding: 10px;  background-color: rgb(236, 235, 235);">
+
+          <img src="./img/Butter_Salt_Cookies_300gm__.jpg" class="card-img-top "
+            style="width: 85%; margin-left: 20px; margin-top: 20px;" alt="...">
+          <div class="card-body">
+            <p class="card-title fs-6">American Cookies 300gm <br><br>
+            </p>
+
+            <span class="text-info"><i class="fa-solid fa-square-check"></i> in stock</span>
+
+
+            <div>
+              <p> <br><b class="fs-3"><i class="fa-solid fa-bangladeshi-taka-sign fs-4"></i>250</b> <span><i
+                    class="fa-solid fa-cart-shopping fs-4 float-end  p-2 text-light "
+                    style="background-color: #db2424; border-radius: 50%;"></i></span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- card -->
+
+        <div class="card  col-3 shadow-lg p-3  bg-body rounded"
+          style="width: 18rem; padding: 10px;  background-color: rgb(236, 235, 235);">
+
+          <img src="./img/cookies2.png" class="card-img-top " style="width: 85%; margin-left: 20px; margin-top: 20px;"
+            alt="...">
+          <div class="card-body">
+            <p class="card-title fs-6">American Cookies 300gm <br><br>
+            </p>
+
+            <span class="text-info"><i class="fa-solid fa-square-check"></i> in stock</span>
+
+
+            <div>
+              <p> <br><b class="fs-3"><i class="fa-solid fa-bangladeshi-taka-sign fs-4"></i>250</b> <span><i
+                    class="fa-solid fa-cart-shopping fs-4 float-end  p-2 text-light "
+                    style="background-color: #db2424; border-radius: 50%;"></i></span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+    </section><br><br>
+
+    <!-- input  -->
+    <section class="container-fluid ">
+
+      <div class="" style="display: flex;  gap: 50px;">
+        <div class="card" style="text-align: center; background: rgb(236, 235, 235); "><br>
+          <h5>Stay Connected</h5>
+          <div class="card-body">
+
+            <p class="card-text">Exclusive offers <br>
+              Subscribe to our news and get updated about exclusive offers!</p>
+
+            <div class="input-group mb-3  gap-2">
+              <input class=" ms-5 bg-light" type="email" required placeholder="Email" aria-label="Recipient's username"
+                aria-describedby="button-addon2"
+                style="width: 400px; border: none; padding: 7px 20px 7px 20px; border-radius: 20px;">
+              <button class="btn "
+                style="   background: red; border:none;color:white; padding: 5px 20px 5px 20px; border-radius:20px;"
+                type="button" id="button-addon2"><a href=""
+                  style="text-decoration: none;color: white;">Subscribe</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="card col-6" style="text-align: center; background: rgb(236, 235, 235); "><br>
+
+          <h5>Get social</h5>
+          <div class="card-body">
+
+            <p class="card-text">Join us in the group <br>
+              and be the first to know all promotions and offers!</p>
+            <P>
+              <a href=""><i class="fa-brands fa-facebook size"></i></a>
+              <a href=""><i class="fa-brands fa-vk size"></i></a>
+              <a href=""><i class="fa-brands fa-square-twitter size"></i></a>
+              <a href=""><i class="fa-brands fa-google-plus size"></i></a>
+              <a href=""><i class="fa-brands fa-square-youtube size"></i></a>
+              <a href=""><i class="fa-brands fa-skype size"></i></a>
+              <a href=""><i class="fa-brands fa-github size"></i></a>
+
+            </P>
+          </div>
+        </div>
+
+      </div>
+    </section><br>
+
+  </main>
+  <hr><br>
+
+
+  <footer>
+    <div class="container-fluid">
+
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+
+        <div class="col-3 ">
+          <h5><a href="" class="a2">My Account</a></h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sing in</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted" target="_blank">Create Account</a></li>
+          </ul>
+        </div>
+
+
+        <div class="col-3 ">
+          <h5><a href="" class="a2">About Tasty Treat</a></h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About us</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contact us</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">terms & condition</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Praivecy policy</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Cancelation,Return & Refund policy</a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="col-3 ">
+          <h5><a href="" class="a2">Customer Service</a></h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About your order</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Wishlist</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Comparision list</a></li>
+
+          </ul>
+        </div>
+
+        <div class="col-3">
+          <h5><a href="" class="a2">Tasty Treat Contact Us</a></h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">Dhaka, PRAN-RFL Center</li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">01304123243</a></li>
+            <li class="nav-item mb-2">Mon-Sun 9.00 - 18.00</li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><u>info@tastytreatbd.com</u></a></li>
+            <li class="nav-item mb-2"><a href="https://tastytreatbd.com/contacts/"
+                class="nav-link p-0 text-muted"><u>View on map</u></a></li>
+          </ul>
+        </div>
+      </footer>
+
+    </div>
+
+    <div class="row container-fluid">
+      <div class="col-5 ">
+        <div class="position-fixed bottom-0 ">
+          <p id="outlet-logo">
+            <a href=""><img src="./img/outlet.png" onclick="showOutletPopup(this)" alt="Outlet" width="100px"></a>
+          </p>
+        </div>
+        <p style="margin-left: 70px;">21 Tastytreatbd.com</p>
+
+
+      </div>
+      <div class="col-7">
+        <img src="./img/SSL Commerz Pay With logo All Size-03-1.png" alt="" width="700px" height="30px">
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+  <script src="./dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
