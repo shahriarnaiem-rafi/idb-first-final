@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yammi😋Foods</title>
   <link rel="shortcut icon" href="./img/ficon.png" type="image/x-icon">
- 
+
   <!-- bootstrap link -->
   <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
-  
+
 
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-  
+
   <!-- font  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,12 +25,14 @@
     body {
       font-family: "Roboto", sans-serif;
     }
+
     /* fixd nav bar red */
     .my-nav {
       position: fixed;
       top: 0;
       z-index: 99;
     }
+
     /* nav hover */
     .red-nav ul li:hover {
       background: #a70f0f;
@@ -54,8 +56,8 @@
       font-weight: bold;
     }
 
-    
 
+    /* promotion section card */
     .ab__dotd_promotions-item_days_left {
       display: flex;
       align-items: center;
@@ -80,6 +82,8 @@
       background: #eee;
     }
 
+
+    /* card shadow */
     .card1 {
       box-shadow: 10px 10px 5px 15px rgb(243, 242, 242);
 
@@ -155,10 +159,10 @@
           <form class="d-flex" style="margin-left:300px ;">
             <input class="form-control me-2 input" type="search" placeholder="Search items" aria-label="Search"
               style="width:500px; border: none;">
-              <button type="button" class="btn " data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
-            
+            <button type="button" class="btn " data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
           </form>
 
           <ul class="navbar-nav   mb-lg-0  align-items-center ">
@@ -184,7 +188,8 @@
     </nav>
 
     <!-- nav 2 -->
-    <nav class="navbar navbar-expand-lg navbar-light  " style="background-color: #db2424; margin-top: 82px; position: relative; ">
+    <nav class="navbar navbar-expand-lg navbar-light  "
+      style="background-color: #db2424; margin-top: 82px; position: relative; ">
       <div class="container-fluid ">
 
 
@@ -200,8 +205,8 @@
                   Pastry
                 </a>
               </li>
-             
-              <li class="nav-item" >
+
+              <li class="nav-item">
                 <a class="nav-link text-light" href="#">First food & snakes</a>
               </li>
               <li class="nav-item">
@@ -215,7 +220,7 @@
                   data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Veberage
                 </a>
-                <ul class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink"  >
+                <ul class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
                   <li><a class="dropdown-item " href="#">Teasty cake</a></li>
                   <div class="dropdown-divider"></div>
                   <li><a class="dropdown-item " href="#">Bread</a></li>
@@ -223,7 +228,7 @@
                 </ul>
 
               </li>
-              
+
 
               <li class="nav-item">
                 <a class="nav-link text-light" href="#">Cookies & Toast</a>
@@ -256,9 +261,9 @@
   <main>
 
     <!-- carosoul  -->
-    <section >
-      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" >
-        <div class="carousel-indicators" >
+    <section>
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active"
             aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"
@@ -269,28 +274,37 @@
             aria-label="Slide 4"></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <!--  data-bs-interval="10000" set time -->
+          <div class="carousel-item active" data-bs-interval="1000">
             <img src="./img/carosol1.png" class="d-block w-100 " alt="..." style="height: 380px;">
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" data-bs-interval="10000">
             <img src="./img/carosol2.png" class="d-block w-100" alt="..." style="height: 380px;">
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" data-bs-interval="10000">
             <img src="./img/carosol3.png" class="d-block w-100" alt="..." style="height: 380px;">
           </div>
-          <div class="carousel-item"></div>
-          <img src="./img/carosol4.png" class="d-block w-100" alt="..." style="height: 380px;">
+          <div class="carousel-item" data-bs-interval="10000">
+            <img src="./img/carosol4.png" class="d-block w-100" alt="..." style="height: 380px;">
+          </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-     
 
 
-      <div >
+      <div>
         <img src="./img/footcarosoul.png" alt="" class="w-100">
       </div>
 
     </section>
-    
+
 
     <!-- Promotion Section -->
 
@@ -495,7 +509,7 @@
         </div>
       </div>
 
-      <div >
+      <div>
 
         <img src="./img/Web-Banner-Mexiacan-_-Momo.jpg" alt="" class="w-100 ">
       </div>
@@ -1119,7 +1133,8 @@
           <h5><a href="" class="a2">My Account</a></h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sing in</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted" target="_blank">Create Account</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted" target="_blank">Create Account</a>
+            </li>
           </ul>
         </div>
 
