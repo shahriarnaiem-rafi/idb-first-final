@@ -141,6 +141,18 @@
     .size:hover {
       color: red;
     }
+    /* promotion card */
+    .my-style{
+      overflow: hidden;
+    }
+    .my-card{
+      transform: scale(1);
+      cursor: zoom-in;
+    }
+    .my-card:hover{
+      transition: 2s all ease;
+      transform: scale(1.2);
+    }
   </style>
 </head>
 
@@ -313,10 +325,10 @@
         <div><br>
           <h2 style="color: white;"> Promotion</h2>
         </div><br>
-        <div class="d-flex  " style="gap: 90px;">
+        <div class="d-flex  my-style" style="gap: 90px; ">
           <!-- card1 -->
 
-          <div class="card" style="width: 18rem;">
+          <div class="card my-card" style="width: 18rem;">
 
             <div>
               <img src="./img/momo.jpg" class="card-img-top " alt="...">
@@ -334,7 +346,7 @@
           </div>
           <!-- card2 -->
 
-          <div class="card " style="width: 18rem;">
+          <div class="card my-card" style="width: 18rem;">
             <img src="./img/extracard.jpg" class="card-img-top" alt="..." style="height: 180px;">
             <div class="card-body">
               <div class="ab__dotd_promotions-item_days_left float-start me-3">
@@ -346,7 +358,7 @@
             </div>
           </div>
           <!-- card-3 -->
-          <div class="card" style="width: 18rem;">
+          <div class="card my-card" style="width: 18rem;">
             <img src="./img/waffle_1320x800.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <div class="ab__dotd_promotions-item_days_left float-start me-3">
@@ -359,7 +371,7 @@
           </div>
           <!-- card4 -->
 
-          <div class="card" style="width: 18rem;">
+          <div class="card my-card" style="width: 18rem;">
             <img src="./img/extracard2.jpg" class="card-img-top" alt="..." height="180px">
             <div class="card-body">
               <div class="ab__dotd_promotions-item_days_left float-start me-3">
