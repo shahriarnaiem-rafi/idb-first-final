@@ -58,16 +58,32 @@
       color: red;
     }
 
+    /* card */
 
-    .card-hover img {
+    .card-hover {
       transform: scale(1);
-
     }
 
+    .card-hover:hover {
+
+      height: 450px;
+      margin-left: 20px;
+      margin-top: 10px;
+      transform: scale(1.1);
+      transition: 2s all ease;
+    }
+
+    .card-hover2:hover {
+      margin-top: 30px;
+      height: 450px;
+
+      transform: scale(1.1);
+      transition: 2s all ease;
+    }
+
+
     .another {
-
       overflow: hidden;
-
     }
 
     .card-hover:hover .my-img {
@@ -206,16 +222,17 @@
 
     <div class="row">
 
-      <div style="background-color: white; " class="all-hover-card col-3">
+      <div style="background-color: white; " class="all-hover-card col-3 ">
 
         <div class="card card-hover" style="width: 18rem; padding: 10px; background-color: rgb(236, 235, 235);">
           <p
             style="border: 3px solid red; color: red;background: white;padding: 2px; text-align: center; display: inline-block; position: absolute; left: 5px; top: 15px; font-size: 15px;">
             save 10%</p>
-          <div class="another">
-            <img src="./img/mycake3.png" class="card-img-top my-img"
-              style="width: 85%; margin-left: 20px; margin-top: 20px;" alt="...">
-          </div>
+          <!-- overflow hidden -->
+
+          <img src="./img/mycake3.png" class="card-img-top " style="width: 85%; margin-left: 20px; margin-top: 20px;"
+            alt="...">
+
           <div class="card-body">
             <p class="card-title">Vanila Cake 500 GM</p>
             <p class="card-text " title="this product is rate 5 out of 5"><a href="#" class="a"> <span
@@ -240,12 +257,14 @@
 
       <div style="background-color: white; " class="all-hover-card col-3">
 
-        <div class="card" style="width: 18rem; padding: 10px; background-color: rgb(236, 235, 235);">
+        <div class="card card-hover2" style="width: 18rem; padding: 10px; background-color: rgb(236, 235, 235);">
           <p
             style="border: 3px solid red; color: red;background: white;padding: 2px; text-align: center; display: inline-block; position: absolute; left: 5px; top: 15px; font-size: 15px;">
             save 10%</p>
+
           <img src="./img/mycake.png" class="card-img-top " style="width: 85%; margin-left: 20px; margin-top: 20px;"
             alt="...">
+
           <div class="card-body">
             <p class="card-title"> Cake 600 GM</p>
             <p class="card-text " title="this product is rate 5 out of 5"><a href="#" class="a"> <span
@@ -271,7 +290,7 @@
 
       <div style="background-color: white; " class="all-hover-card col-3">
 
-        <div class="card" style="width: 18rem; padding: 10px; background-color: rgb(236, 235, 235);">
+        <div class="card card-hover2" style="width: 18rem; padding: 10px; background-color: rgb(236, 235, 235);">
           <p
             style="border: 3px solid red; color: red;background: white;padding: 2px; text-align: center; display: inline-block; position: absolute; left: 5px; top: 15px; font-size: 15px;">
             save 10%</p>
@@ -300,7 +319,7 @@
 
       <div style="background-color: white; " class="all-hover-card col-3">
 
-        <div class="card" style="width: 18rem; padding: 10px; background-color: rgb(236, 235, 235);">
+        <div class="card card-hover" style="width: 18rem; padding: 10px; background-color: rgb(236, 235, 235);">
           <p
             style="border: 3px solid red; color: red;background: white;padding: 2px; text-align: center; display: inline-block; position: absolute; left: 5px; top: 15px; font-size: 15px;">
             save 10%</p>
