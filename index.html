@@ -141,6 +141,44 @@
     .size:hover {
       color: red;
     }
+
+    /* promotion card */
+    .my-style {
+      overflow: hidden;
+    }
+
+    .my-card {
+      transform: scale(1);
+      cursor: zoom-in;
+    }
+
+    .my-card:hover {
+      transition: 2s all ease;
+      transform: scale(1.2);
+    }
+
+    /* cake maker */
+    .my-style2 {
+      overflow: hidden;
+    }
+
+    .my-card2 {
+      transform: scale(1);
+      cursor: zoom-out;
+    }
+
+    .my-card2:hover {
+      transition: 2s all ease;
+      transform: scale(.9);
+    }
+    .soytani{
+      
+      transition: 10s all ease;
+    }
+    .soytani:hover{
+      transform: rotate(360deg) ;
+      transition: 2s all ease;
+    }
   </style>
 </head>
 
@@ -149,7 +187,7 @@
     <!-- first nav -->
     <nav class="navbar navbar-expand-lg navbar-light my-nav w-100 " style="background-color: #f7eeee; ">
       <div class="container-fluid">
-        <a class="navbar-brand ms-2 " href="./index.html"><img src="./img/logo.jpg" alt="" style="width: 130px;"></a>
+        <a class="navbar-brand ms-2 " href="./index.html"><img src="./img/logo.jpg" alt="" style="width: 130px;" title="Refresh"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -174,11 +212,11 @@
             </li>
 
             <li class="ms-3">
-              <a class="nav-link ms-2 active d-flex flex-column justify-content-center align-items-center" href="#"> <i
+              <a class="nav-link ms-2 active d-flex flex-column justify-content-center align-items-center" href="#" title="Please create an account"> <i
                   class="fa-regular fa-circle-user fs-4 active"></i>Account</a>
             </li>
             <li class="nav-item active ">
-              <a class="nav-link me-5" href="#" tabindex="-1"><i class="fa-solid fa-cart-shopping fs-4"></i></a>
+              <a class="nav-link me-5" href="#" tabindex="-1" title="add in cart"><i class="fa-solid fa-cart-shopping fs-4"></i></a>
             </li>
           </ul>
 
@@ -253,7 +291,7 @@
     </nav>
   </header>
   <div style="background:#db2424; ">
-    <marquee width="100%" direction="right">
+    <marquee width="100%" direction="right" title="Enjoy out offer" style="cursor: pointer;">
       <h6 style=" display: inline; color: white;">!!!! Special Discount in
         momo20% cake10% !!!!</h6>
     </marquee>
@@ -288,11 +326,13 @@
             <img src="./img/carosol4.png" class="d-block w-100" alt="..." style="height: 380px;">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
@@ -313,10 +353,10 @@
         <div><br>
           <h2 style="color: white;"> Promotion</h2>
         </div><br>
-        <div class="d-flex  " style="gap: 90px;">
+        <div class="d-flex  my-style" style="gap: 90px; ">
           <!-- card1 -->
 
-          <div class="card" style="width: 18rem;">
+          <div class="card my-card" style="width: 18rem;">
 
             <div>
               <img src="./img/momo.jpg" class="card-img-top " alt="...">
@@ -334,7 +374,7 @@
           </div>
           <!-- card2 -->
 
-          <div class="card " style="width: 18rem;">
+          <div class="card my-card" style="width: 18rem;">
             <img src="./img/extracard.jpg" class="card-img-top" alt="..." style="height: 180px;">
             <div class="card-body">
               <div class="ab__dotd_promotions-item_days_left float-start me-3">
@@ -346,7 +386,7 @@
             </div>
           </div>
           <!-- card-3 -->
-          <div class="card" style="width: 18rem;">
+          <div class="card my-card" style="width: 18rem;">
             <img src="./img/waffle_1320x800.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <div class="ab__dotd_promotions-item_days_left float-start me-3">
@@ -359,7 +399,7 @@
           </div>
           <!-- card4 -->
 
-          <div class="card" style="width: 18rem;">
+          <div class="card my-card" style="width: 18rem;">
             <img src="./img/extracard2.jpg" class="card-img-top" alt="..." height="180px">
             <div class="card-body">
               <div class="ab__dotd_promotions-item_days_left float-start me-3">
@@ -389,8 +429,8 @@
 
         <div class="row">
 
-          <div style="background-color: white;  " class="col-3">
-            <div class="card" style="width: 18rem; padding: 10px; background-color: rgb(236, 235, 235);">
+          <div style="background-color: white;  " class="col-3 my-style2">
+            <div class="card my-card2" style="width: 18rem; padding: 10px; background-color: rgb(236, 235, 235);">
               <p
                 style="border: 3px solid red; color: red;background: white;padding: 2px; text-align: center; display: inline-block; position: absolute; left: 5px; top: 15px; font-size: 15px;">
                 save 10%</p>
@@ -417,9 +457,9 @@
             </div>
           </div>
           <!-- card2 -->
-          <div style="background-color: white; " class="col-3">
+          <div style="background-color: white; " class="col-3 my-style2">
 
-            <div class="card" style="width: 18rem; padding: 10px; background-color: rgb(236, 235, 235);">
+            <div class="card my-card2" style="width: 18rem; padding: 10px; background-color: rgb(236, 235, 235);">
               <p
                 style="border: 3px solid red; color: red;background: white;padding: 2px; text-align: center; display: inline-block; position: absolute; left: 5px; top: 15px; font-size: 15px;">
                 save 10%</p>
@@ -447,9 +487,9 @@
           </div>
           <!-- card3 -->
 
-          <div style="background-color: white;  " class="col-3">
+          <div style="background-color: white;  " class="col-3  my-style2">
 
-            <div class="card" style="width: 18rem; padding: 10px; background-color: rgb(236, 235, 235);">
+            <div class="card my-card2" style="width: 18rem; padding: 10px; background-color: rgb(236, 235, 235);">
               <p
                 style="border: 3px solid red; color: red;background: white;padding: 2px; text-align: center; display: inline-block; position: absolute; left: 5px; top: 15px; font-size: 15px;">
                 save 10%</p>
@@ -476,9 +516,9 @@
             </div>
           </div>
 
-          <div style="background-color: white;  " class="col-3">
+          <div style="background-color: white;  " class="col-3  my-style2">
 
-            <div class="card" style="width: 18rem; padding: 10px; background-color: rgb(236, 235, 235);">
+            <div class="card my-card2" style="width: 18rem; padding: 10px; background-color: rgb(236, 235, 235);">
               <p
                 style="border: 3px solid red; color: red;background: white;padding: 2px; text-align: center; display: inline-block; position: absolute; left: 5px; top: 15px; font-size: 15px;">
                 save 10%</p>
@@ -525,9 +565,9 @@
 
         <div class="row">
 
-          <div style="background-color: white; " class="col-3">
+          <div style="background-color: white; " class="col-3 ">
 
-            <div class="card" style="width: 18rem; padding: 10px;  background-color: rgb(236, 235, 235);">
+            <div class="card soytani" style="width: 18rem; padding: 10px;  background-color: rgb(236, 235, 235);">
               <p
                 style="border: 3px solid red; color: red;background: white;padding: 2px; text-align: center; display: inline-block; position: absolute; left: 5px; top: 15px; font-size: 15px;">
                 save 20%</p>
@@ -557,7 +597,7 @@
 
           <div style="background-color: white; " class="col-3">
 
-            <div class="card" style="width: 18rem; padding: 10px;  background-color: rgb(236, 235, 235);">
+            <div class="card soytani" style="width: 18rem; padding: 10px;  background-color: rgb(236, 235, 235);">
               <p
                 style="border: 3px solid red; color: red;background: white;padding: 2px; text-align: center; display: inline-block; position: absolute; left: 5px; top: 15px; font-size: 15px;">
                 save 30%</p>
@@ -587,7 +627,7 @@
 
           <div style="background-color: white; " class="col-3">
 
-            <div class="card " style="width: 18rem; padding: 10px;  background-color: rgb(236, 235, 235);">
+            <div class="card  soytani" style="width: 18rem; padding: 10px;  background-color: rgb(236, 235, 235);">
               <p
                 style="border: 3px solid red; color: red;background: white;padding: 2px; text-align: center; display: inline-block; position: absolute; left: 5px; top: 15px; font-size: 15px;">
                 save 20%</p>
@@ -617,7 +657,7 @@
 
           <div style="background-color: white; " class="col-3">
 
-            <div class="card" style="width: 18rem; padding: 10px;  background-color: rgb(236, 235, 235);">
+            <div class="card soytani" style="width: 18rem; padding: 10px;  background-color: rgb(236, 235, 235);">
               <p
                 style="border: 3px solid red; color: red;background: white;padding: 2px; text-align: center; display: inline-block; position: absolute; left: 5px; top: 15px; font-size: 15px;">
                 save 20%</p>
